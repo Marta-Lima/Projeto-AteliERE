@@ -1,0 +1,28 @@
+body {
+    height:2000px;
+}
+
+#menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90px;
+    background-color:brown;
+}
+
+.itens-menu {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    height:100%;
+    margin: 0;
+}
+
+.nav-item {
+    margin-right: 10px;
+}
+
+.nav-link {
+    color:antiquewhite;
+}
