@@ -1,28 +1,99 @@
 body {
-    height:2000px;
+    
+    margin:0;
+    font-size:20px ;
 }
+.ateliere{
+    margin-top:100px;
+}
+
+#logo{
+    width: 200px;
+}
+
+/*header{
+    background-color:burlywood;
+    padding:30px;
+    text-align: center;
+}*/
 
 #menu {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    height: 90px;
-    background-color:brown;
-}
+    height: 60px;
+    background-color:burlywood;
+    }
+
 
 .itens-menu {
-    list-style: none;
+    list-style: none;/*tira ícone de marcação*/
     display: flex;
     align-items: center;
-    height:100%;
-    margin: 0;
+    height:100%;   
+          
 }
 
 .nav-item {
     margin-right: 10px;
 }
 
+
 .nav-link {
     color:antiquewhite;
+    text-decoration:none; /*retira sublinhado*/
+    font-size: 17px;
+    align-items: center;
+    
+    
 }
+
+
+/*tentando formatar o menu novamente:
+
+#menu{
+    overflow:hidden;
+    background-color: goldenrod;
+}
+
+.nav-link{
+    float:left; /* deixar flutuante À esquerda*/
+    color:antiquewhite;
+    text-align:center; /*centralizar na vertical do elemento*/
+    padding: 14px 16px; /*a primeira medida é relativa a superior e topo e a segunda a esquerda e direira*/
+    text-decoration: none;
+    font-size:17px;
+
+} 
+
+/*
+.dist{
+    margin-top: 100px;
+
+} */
+
+.rodape{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2.5rem;
+    padding-bottom: 2rem;
+    }
+    
+    .rodape_contato {
+    display: flex;
+    }
+
+    .rodape_logo{
+width: 50p;
+    }
+    
+    .rodape__midia {
+    display: block;
+    
+    width: 42px;
+    height: 42px;
+    
+    margin: 2rem 1rem;
+    }
