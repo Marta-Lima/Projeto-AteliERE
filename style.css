@@ -9,11 +9,13 @@ header{
     position: fixed; 
     top: 0;
     left: 0;
-    width:100%;
+    width:100vw;
+    margin-bottom: 20px;
 }
 
+
 .conteudo{
-    margin-top: 100px; /*tentando limitar o início do texto pra tirar de tras do menu ao redirecionar*/
+    margin-top: 100px; 
  
 }
 
@@ -27,8 +29,8 @@ nav{
 }
 
 .ateliere{
-    color:peru;
-    font-size:20px;
+    /*color:peru;
+    font-size:20px; COMO TROCAMOS O TEXTO DO NOME PELA LOGO, PODEMOS TIRAR ESSA PARTE DE COR E TAMANHO DE FONTE*/
     margin:0;
     padding:10px;
     
@@ -102,7 +104,7 @@ button:focus ~ ul {    /*quando o botão receber o foco, a ul vai ter a altura d
         
     }
     .nav-item, ul{
-        width:100%; /*para o hover poder ficar na largura da tela toda*/
+        width:100vw; /*para o hover poder ficar na largura da tela toda*/
       
     }
 
@@ -116,28 +118,55 @@ button:focus ~ ul {    /*quando o botão receber o foco, a ul vai ter a altura d
     }
 }
 
+/*alinhamento da imagem com texto*/
 .quem-somos {
     display: flex;
-    align-items: center;
-    
-img, p {
-    display: inline-block;
-}
+    align-items: center;   
 }
 
-footer{
+.quem-somos img, p {
+    display: inline-block;
+}
+/*alinhamento da imagem com texto fragmentação do bloco  monitoria*/
+.valores div{
+    display: flex;
+
+}
+
+.valores div div{
+    margin:10px;
+    padding: 5px;
+}
+
+/*footer{
     line-height: 50px;
     height: 40px;
     padding: 28px;
 }
 
-footer ul {
+footer  {
     float: right;
     display: table;
 }
     
-footer ul li{
+footer {
     display: table-cell;
     vertical-align: middle;
     padding: 10px;
+}*/
+
+/*novo rodapé:*/
+footer img{
+    width: 47px;
+    height: 47px;
+    padding: 10px;
+}
+
+.rodape__logo{
+    width:150px ;
+    padding: 10px;
+}
+.rodape{
+    display: flex;
+    justify-content: space-between;
 }
