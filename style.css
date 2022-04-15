@@ -13,10 +13,14 @@ header{
     margin-bottom: 20px;
 }
 
+.primeira{
+    padding-top: 70px;
+}
+
 
 .conteudo{
-    margin-top: 100px; 
- 
+    padding-top: 70px;
+    margin-top: -70px;
 }
 
 nav{
@@ -118,19 +122,51 @@ button:focus ~ ul {    /*quando o botão receber o foco, a ul vai ter a altura d
     }
 }
 
+h2 {
+    color: #efa900;
+    font-weight: bold;
+}
+
+
+
+
 /*alinhamento da imagem com texto*/
 .quem-somos {
     display: flex;
-    align-items: center;   
+    align-items: center;
+    font-size: 1.7vw; 
+    /* font-weight: bold; */
 }
 
 .quem-somos img, p {
     display: inline-block;
+    margin:10px;
+    padding: 5px; 
 }
+
+.historico {
+    display: flex;
+    align-items: center;
+     
+    /* font-weight: bold; */
+}
+
+.paragrafo-historico{
+    font-size: 2vw;
+}
+
+.historico p {
+    display: inline-block;
+    margin:10px;
+    padding: 5px;
+    font-size: 5vw; 
+}
+
+
 /*alinhamento da imagem com texto fragmentação do bloco  monitoria*/
 .valores div{
     display: flex;
-
+    font-size: 1.7vw; 
 }
 
 .valores div div{
