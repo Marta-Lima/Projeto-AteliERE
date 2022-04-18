@@ -33,11 +33,8 @@ nav{
 }
 
 .ateliere{
-    /*color:peru;
-    font-size:20px; COMO TROCAMOS O TEXTO DO NOME PELA LOGO, PODEMOS TIRAR ESSA PARTE DE COR E TAMANHO DE FONTE*/
     margin:0;
     padding:10px;
-    
 }
 
 ul{
@@ -80,14 +77,144 @@ button{
     background-color: peru;
 }
 
+h2 {
+    color: #efa900;
+    font-weight: bold;
+}
+
+.quem-somos{
+    display: flex;
+}
+
+.quem-somos p{
+    margin: 10px;
+    padding: 5px;
+    font-size: 1.7vw;
+}
+
+
+
+
+/*alinhamento da imagem com texto (Apagar)
+.quem-somos {
+    display: flex;
+    align-items: center;
+    font-size: 1.7vw; 
+    /* font-weight: bold; 
+
+/* .quem-somos img, p {
+    display: inline-block;
+    margin:10px;
+    padding: 5px; 
+} */
+
+.historico {
+    display: flex;
+    align-items: center;
+     
+
+}
+
+.paragrafo{
+    font-size: 2vw;
+}
+
+.historico p {
+    display: inline-block;
+    margin:10px;
+    padding: 5px;  
+}
+
+
+
+/*alinhamento da imagem com texto fragmentação do bloco  monitoria*/
+#valores div{
+    display: flex;
+    flex-direction: row-reverse;
+    font-size: 1.7vw; 
+}
+
+.valores p{
+    margin:10px;
+    padding: 5px;
+}
+
+
+/*rodapé:*/
+
+footer img{
+    width: 47px;
+    height: 47px;
+    padding: 10px;
+}
+
+.rodape__logo{
+    width:150px ;
+    padding: 10px;
+}
+.rodape{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.rodape__midia{
+    resize: none;
+    
+}
+
+
+
+/*para ter responsividade em outro tamanho de tela
+
+button:focus ~ ul {    /*quando o botão receber o foco, a ul vai ter a altura determinada aqui
+    height: 213px;
+}
+
+@media(max-width:700px) {
+    nav, ul {
+        flex-direction: column; /*para mudar direção da listagem
+        
+    }
+    ul{
+        text-align: center;
+        margin:0;
+        height: 0;
+        
+    }
+    nav{
+        padding:0;
+        align-items: flex-start;
+    }
+
+    .ateliere{
+        margin:10px;
+        
+    }
+    .nav-item, ul{
+        width:100vw; /*para o hover poder ficar na largura da tela toda
+      
+    }
+
+    .nav-item{
+        padding:6px;
+
+    }
+   
+    button{
+        display:flex;
+    }
+}*/
 
 /*para ter responsividade em outro tamanho de tela*/
+
 
 button:focus ~ ul {    /*quando o botão receber o foco, a ul vai ter a altura determinada aqui*/
     height: 213px;
 }
 
-@media(max-width:700px) {
+
+@media(max-width:376px) {
     nav, ul {
         flex-direction: column; /*para mudar direção da listagem*/
         
@@ -120,89 +247,65 @@ button:focus ~ ul {    /*quando o botão receber o foco, a ul vai ter a altura d
     button{
         display:flex;
     }
-}
 
-h2 {
-    color: #efa900;
-    font-weight: bold;
-}
-
-
-
-
-/*alinhamento da imagem com texto*/
-.quem-somos {
-    display: flex;
-    align-items: center;
-    font-size: 1.7vw; 
-    /* font-weight: bold; */
-}
-
-.quem-somos img, p {
-    display: inline-block;
-    margin:10px;
-    padding: 5px; 
-}
-
-.historico {
-    display: flex;
-    align-items: center;
+    .quem-somos{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .quem-somos img{
+        width: 270px;
+        height: 270px;
+    }
      
-    /* font-weight: bold; */
-}
+    #valores div {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        
+    }
+    .valores img{
+        width: 270px;
+        height: 270px;
+    }
+    .paragrafo{
+        font-size: 15px;
+    }
 
-.paragrafo-historico{
-    font-size: 2vw;
-}
+    .quem-somos p{
+        font-size: 15px; 
+    }
 
-.historico p {
-    display: inline-block;
-    margin:10px;
-    padding: 5px;
-    font-size: 5vw; 
-}
+    #valores p{
+        font-size: 15px; 
+    }
 
-
-/*alinhamento da imagem com texto fragmentação do bloco  monitoria*/
-.valores div{
-    display: flex;
-    font-size: 1.7vw; 
-}
-
-.valores div div{
-    margin:10px;
-    padding: 5px;
-}
-
-/*footer{
-    line-height: 50px;
-    height: 40px;
-    padding: 28px;
-}
-
-footer  {
-    float: right;
-    display: table;
-}
+    .quem-somos p{
+        margin:0;
+        padding: 5px;
+    }
     
-footer {
-    display: table-cell;
-    vertical-align: middle;
-    padding: 10px;
-}*/
+    #logo{
+        width:100px ;
+        height: 40px;
+        padding: 8px;
+    }
+    
+    .rodape{
+      display: flex;
+     justify-content: space-between;
+     background-color: antiquewhite;
+     margin-bottom: 0;    
+     margin-right: 0;    
+    }
 
-/*novo rodapé:*/
-footer img{
-    width: 47px;
-    height: 47px;
-    padding: 10px;
-}
+    .rodape__midia img{
+        width: 27px;
+        height: 27px;
+        padding: 10px;
+        
+    }
+    
 
-.rodape__logo{
-    width:150px ;
-    padding: 10px;
-}
-.rodape{
-    display: flex;
-    justify-content: space-between;
+   
 }
