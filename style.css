@@ -32,6 +32,12 @@ nav{
     
 }
 
+@media(min-width:376px) and (max-width:700px){
+    nav{
+        background-color: red;
+    } 
+}
+
 .ateliere{
     margin:0;
     padding:10px;
@@ -160,20 +166,21 @@ footer img{
 
 .rodape__midia{
     resize: none;
+    text-decoration: none;
     
 }
 
 
 
-/*para ter responsividade em outro tamanho de tela
+/* para ter responsividade em outro tamanho de tela */
 
-button:focus ~ ul {    /*quando o botão receber o foco, a ul vai ter a altura determinada aqui
+button:focus ~ ul {    /*quando o botão receber o foco, a ul vai ter a altura determinada aqui*/
     height: 213px;
 }
 
-@media(max-width:700px) {
+@media(min-width:376px) and (max-width:700px) {
     nav, ul {
-        flex-direction: column; /*para mudar direção da listagem
+        flex-direction: column; 
         
     }
     ul{
@@ -192,7 +199,7 @@ button:focus ~ ul {    /*quando o botão receber o foco, a ul vai ter a altura d
         
     }
     .nav-item, ul{
-        width:100vw; /*para o hover poder ficar na largura da tela toda
+        width:100vw; 
       
     }
 
@@ -204,13 +211,16 @@ button:focus ~ ul {    /*quando o botão receber o foco, a ul vai ter a altura d
     button{
         display:flex;
     }
-}*/
+}
 
 /*para ter responsividade em outro tamanho de tela*/
 
 
 button:focus ~ ul {    /*quando o botão receber o foco, a ul vai ter a altura determinada aqui*/
     height: 213px;
+    @media(min-width:376px and max-width:769px)  {
+        height: 300px;
+    }
 }
 
 
@@ -306,6 +316,11 @@ button:focus ~ ul {    /*quando o botão receber o foco, a ul vai ter a altura d
         
     }
     
+    .rodape div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
    
 }
