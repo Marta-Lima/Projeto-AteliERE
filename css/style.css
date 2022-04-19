@@ -25,17 +25,11 @@ header{
 
 nav{
     background-color: burlywood;
-    padding:0 20px; /*horizontal vertical*/
+    padding:0 20px;
     justify-content: space-between;
     align-items: center;
     
     
-}
-
-@media(min-width:376px) and (max-width:700px){
-    nav{
-        background-color: red;
-    } 
 }
 
 .ateliere{
@@ -44,26 +38,28 @@ nav{
 }
 
 ul{
-    list-style: none; /*tira ícone da lista*/
+    list-style: none;
     padding:0;
-    overflow:hidden; /*para esconder os ítens do menu quando não tiver extendido*/
-    transition: all .5s; /*para a transição ser mais suave e orgânica ao extender a barra*/
+    overflow:hidden;
+    transition: all .5s;
     
 }
 
 nav, ul{
 display:flex;
-direction: row; /*coloca em linha*/
+direction: row;
 }
 
 .nav-item{
-    padding:0 20px; /*para cada ítem do menu ter o padding e assim ficam sepaçados entre si*/
+    padding:0 20px;
     
 }
 
 .nav-link{
-    color:antiquewhite;
+    color:sienna;
     text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
 }
 
 button{
@@ -74,13 +70,13 @@ button{
     position:absolute;
     right: 10px;
     top: 10px;
-    display:none; /*faz não aparecer*/
+    display:none;
     }
 
-.nav-item:hover, button:hover{
+.nav-item:hover, button:hover, .colabore:hover{
     cursor:pointer;
     opacity: 0,8;
-    background-color: peru;
+    background-color:antiquewhite;
 }
 
 h2 {
@@ -98,27 +94,16 @@ h2 {
     font-size: 1.7vw;
 }
 
-
-
-
-/*alinhamento da imagem com texto (Apagar)
-.quem-somos {
-    display: flex;
-    align-items: center;
-    font-size: 1.7vw; 
-    /* font-weight: bold; 
-
-/* .quem-somos img, p {
-    display: inline-block;
-    margin:10px;
-    padding: 5px; 
-} */
+.quem-somos img{
+    width:400px;
+	height:400px;
+	border:8px solid peru;
+    border-radius: 10%;
+}
 
 .historico {
     display: flex;
     align-items: center;
-     
-
 }
 
 .paragrafo{
@@ -131,22 +116,32 @@ h2 {
     padding: 5px;  
 }
 
-
-
-/*alinhamento da imagem com texto fragmentação do bloco  monitoria*/
 #valores div{
     display: flex;
     flex-direction: row-reverse;
     font-size: 1.7vw; 
 }
 
+#valores div div{
+    display:flex;
+    flex-direction:column;
+}
 .valores p{
     margin:10px;
     padding: 5px;
 }
 
+.valores img{
+    width:400px;
+	height:400px;
+	border:8px solid peru;
+    border-radius: 10%;
+}
 
-/*rodapé:*/
+.colabore{
+    color:sienna;
+    
+}
 
 footer img{
     width: 47px;
@@ -161,33 +156,27 @@ footer img{
 .rodape{
     display: flex;
     justify-content: space-between;
-    
 }
 
 .rodape__midia{
     resize: none;
-    text-decoration: none;
-    
+    text-decoration: none; 
 }
 
-
-
-/* para ter responsividade em outro tamanho de tela */
-
-button:focus ~ ul {    /*quando o botão receber o foco, a ul vai ter a altura determinada aqui*/
+button:focus ~ ul {
     height: 213px;
 }
 
-@media(min-width:376px) and (max-width:700px) {
+
+
+@media(min-width:376px) and (max-width:769px) {
     nav, ul {
-        flex-direction: column; 
-        
+        flex-direction: column;    
     }
     ul{
         text-align: center;
         margin:0;
-        height: 0;
-        
+        height: 0;  
     }
     nav{
         padding:0;
@@ -210,6 +199,33 @@ button:focus ~ ul {    /*quando o botão receber o foco, a ul vai ter a altura d
    
     button{
         display:flex;
+        right: 25px;
+        top: 10px;
+    }
+
+    .quem-somos{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    #valores div {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        
+    }
+
+    .paragrafo{
+        font-size: 15px;
+    }
+
+    .quem-somos p{
+        font-size: 15px; 
+    }
+
+    #valores p{
+        font-size: 15px; 
     }
 }
 
