@@ -92,6 +92,9 @@ h2 {
     margin: 10px;
     padding: 5px;
     font-size: 1.7vw;
+    text-indent: 30px;
+    margin:10px;
+    
 }
 
 .quem-somos img{
@@ -99,15 +102,27 @@ h2 {
 	height:400px;
 	border:8px solid peru;
     border-radius: 10%;
+    align-items: center;
+}
+
+.quem-somos- {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.7vw;
+    text-indent: 30px ;
+    margin:10px;
 }
 
 .historico {
     display: flex;
     align-items: center;
+    
 }
 
 .paragrafo{
     font-size: 2vw;
+    text-indent: 30px;
+    margin:10px;
 }
 
 .historico p {
@@ -120,6 +135,8 @@ h2 {
     display: flex;
     flex-direction: row-reverse;
     font-size: 1.7vw; 
+    text-indent: 30px;
+    align-items: center;
 }
 
 #valores div div{
@@ -136,6 +153,7 @@ h2 {
 	height:400px;
 	border:8px solid peru;
     border-radius: 10%;
+    
 }
 
 .colabore{
@@ -200,7 +218,7 @@ button:focus ~ ul {
     button{
         display:flex;
         right: 25px;
-        top: 10px;
+        top: 25px;
     }
 
     .quem-somos{
@@ -209,6 +227,7 @@ button:focus ~ ul {
         flex-direction: column;
     }
 
+    
     #valores div {
         display: flex;
         align-items: center;
@@ -222,10 +241,51 @@ button:focus ~ ul {
 
     .quem-somos p{
         font-size: 15px; 
+
+    }
+    .quem-somos- {
+        font-size: 15px;
+    }
+
+    .quem-somos img{
+        width: 30vh;
+        height:30vh;
     }
 
     #valores p{
         font-size: 15px; 
+    }
+
+    .valores img{
+        width: 30vh;
+        height: 30vh;
+    }
+
+    #logo{
+        width:100px ;
+        height: 40px;
+        padding: 8px;
+    }
+    
+    .rodape{
+      display: flex;
+     justify-content: space-between;
+     background-color: antiquewhite;
+     margin-bottom: 0;    
+     margin-right: 0;    
+    }
+
+    .rodape__midia img{
+        width: 27px;
+        height: 27px;
+        padding: 10px;
+        
+    }
+    
+    .rodape div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }
 
@@ -272,6 +332,8 @@ button:focus ~ ul {    /*quando o botão receber o foco, a ul vai ter a altura d
    
     button{
         display:flex;
+        right:25px;
+        top:20px;
     }
 
     .quem-somos{
@@ -280,8 +342,8 @@ button:focus ~ ul {    /*quando o botão receber o foco, a ul vai ter a altura d
         flex-direction: column;
     }
     .quem-somos img{
-        width: 270px;
-        height: 270px;
+        width: 30vh;
+        height: 30vh;
     }
      
     #valores div {
@@ -291,8 +353,8 @@ button:focus ~ ul {    /*quando o botão receber o foco, a ul vai ter a altura d
         
     }
     .valores img{
-        width: 270px;
-        height: 270px;
+        width: 30vh;
+        height: 30vh;
     }
     .paragrafo{
         font-size: 15px;
@@ -300,6 +362,10 @@ button:focus ~ ul {    /*quando o botão receber o foco, a ul vai ter a altura d
 
     .quem-somos p{
         font-size: 15px; 
+    }
+
+    .quem-somos- {
+        font-size: 15px;
     }
 
     #valores p{
