@@ -35,6 +35,7 @@ nav{
 .ateliere{
     margin:0;
     padding:10px;
+    width:150px;
 }
 
 ul{
@@ -46,8 +47,8 @@ ul{
 }
 
 nav, ul{
-display:flex;
-direction: row;
+    display:flex;
+    direction: row;
 }
 
 .nav-item{
@@ -91,9 +92,10 @@ h2 {
 .quem-somos p{
     margin: 10px;
     padding: 5px;
-    font-size: 1.7vw;
+    font-size: 1.5vw;
     text-indent: 30px;
     margin:10px;
+    color:slategray
     
 }
 
@@ -108,9 +110,10 @@ h2 {
 .quem-somos- {
     display: flex;
     flex-direction: column;
-    font-size: 1.7vw;
+    font-size: 1.5vw;
     text-indent: 30px ;
     margin:10px;
+    color:slategray;
 }
 
 .historico {
@@ -120,9 +123,10 @@ h2 {
 }
 
 .paragrafo{
-    font-size: 2vw;
+    font-size: 1.7vw;
     text-indent: 30px;
     margin:10px;
+    color:slategray;
 }
 
 .historico p {
@@ -134,9 +138,10 @@ h2 {
 #valores div{
     display: flex;
     flex-direction: row-reverse;
-    font-size: 1.7vw; 
+    font-size: 1.5vw; 
     text-indent: 30px;
     align-items: center;
+    color:slategray;
 }
 
 #valores div div{
@@ -185,7 +190,10 @@ button:focus ~ ul {
     height: 213px;
 }
 
-
+button:focus ~ ul {    
+    height: 250px;
+    
+}
 
 @media(min-width:376px) and (max-width:769px) {
     nav, ul {
@@ -248,8 +256,8 @@ button:focus ~ ul {
     }
 
     .quem-somos img{
-        width: 30vh;
-        height:30vh;
+        width: 300px;
+        height:225px;
     }
 
     #valores p{
@@ -257,8 +265,8 @@ button:focus ~ ul {
     }
 
     .valores img{
-        width: 30vh;
-        height: 30vh;
+        width: 300px;
+        height: 225px;
     }
 
     #logo{
@@ -268,11 +276,11 @@ button:focus ~ ul {
     }
     
     .rodape{
-      display: flex;
-     justify-content: space-between;
-     background-color: antiquewhite;
-     margin-bottom: 0;    
-     margin-right: 0;    
+        display: flex;
+        justify-content: space-between;
+        background-color: antiquewhite;
+        margin-bottom: 0;    
+        margin-right: 0;    
     }
 
     .rodape__midia img{
@@ -289,20 +297,25 @@ button:focus ~ ul {
     }
 }
 
-/*para ter responsividade em outro tamanho de tela*/
 
+@media(min-width:600px) and (max-width:769px) {
 
-button:focus ~ ul {    /*quando o botão receber o foco, a ul vai ter a altura determinada aqui*/
-    height: 213px;
-    @media(min-width:376px and max-width:769px)  {
+    .quem-somos img{
+        width: 400px;
+        height:300px;
+    }
+
+    .valores img{
+        width: 400px;
         height: 300px;
     }
+
 }
 
 
 @media(max-width:376px) {
     nav, ul {
-        flex-direction: column; /*para mudar direção da listagem*/
+        flex-direction: column; 
         
     }
     ul{
@@ -321,7 +334,7 @@ button:focus ~ ul {    /*quando o botão receber o foco, a ul vai ter a altura d
         
     }
     .nav-item, ul{
-        width:100vw; /*para o hover poder ficar na largura da tela toda*/
+        width:100vw; 
       
     }
 
@@ -342,8 +355,8 @@ button:focus ~ ul {    /*quando o botão receber o foco, a ul vai ter a altura d
         flex-direction: column;
     }
     .quem-somos img{
-        width: 30vh;
-        height: 30vh;
+        width: 270px;
+        height: 202.50px;
     }
      
     #valores div {
@@ -353,8 +366,8 @@ button:focus ~ ul {    /*quando o botão receber o foco, a ul vai ter a altura d
         
     }
     .valores img{
-        width: 30vh;
-        height: 30vh;
+        width: 270px;
+        height: 202.50px;
     }
     .paragrafo{
         font-size: 15px;
@@ -384,11 +397,11 @@ button:focus ~ ul {    /*quando o botão receber o foco, a ul vai ter a altura d
     }
     
     .rodape{
-      display: flex;
-     justify-content: space-between;
-     background-color: antiquewhite;
-     margin-bottom: 0;    
-     margin-right: 0;    
+        display: flex;
+        justify-content: space-between;
+        background-color: antiquewhite;
+        margin-bottom: 0;    
+        margin-right: 0;    
     }
 
     .rodape__midia img{
