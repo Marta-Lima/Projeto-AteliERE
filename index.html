@@ -20,7 +20,7 @@
                     <div><a href="/"><img class="ateliere" src="imagens/AteliERÊtransparente.png" alt="logo"></a></div>
                 </section>
                 <button type="button" onclick="showMenu()">&#9776;</button>
-                <ul id="list-menu">
+                <ul id="list-menu" onclick="hideMenu()">
                     <li class="nav-item"><a class="nav-link" href="#quem-somos">Quem somos</a></li>
                     <li class="nav-item"><a class="nav-link" href="#historico">Histórico</a></li>
                     <li class="nav-item"><a class="nav-link" href="#valores">Valores</a></li>
@@ -97,6 +97,10 @@
            var element = document.getElementById("list-menu");
             element.classList.toggle("expand-menu");
         }
-        </script>
+        function hideMenu() {
+            var element = document.getElementById("list-menu");
+            element.classList.remove("expand-menu");
+        }
+    </script>
 </body>
 </html>
