@@ -183,7 +183,11 @@ footer img{
     text-decoration: none; 
 }
 
-button:focus-within ~ ul {    
+/* button:focus-within ~ ul {    
+    height: 250px;
+} */
+
+.expand-menu{
     height: 250px;
 }
 

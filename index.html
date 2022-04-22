@@ -19,8 +19,8 @@
                 <section>  
                     <div><a href="/"><img class="ateliere" src="imagens/AteliERÊtransparente.png" alt="logo"></a></div>
                 </section>
-                <button type="button">&#9776;</button>
-                <ul>
+                <button type="button" onclick="showMenu()">&#9776;</button>
+                <ul id="list-menu">
                     <li class="nav-item"><a class="nav-link" href="#quem-somos">Quem somos</a></li>
                     <li class="nav-item"><a class="nav-link" href="#historico">Histórico</a></li>
                     <li class="nav-item"><a class="nav-link" href="#valores">Valores</a></li>
@@ -92,5 +92,11 @@
             </a>
        </div>
     </footer>
+    <script>
+        function showMenu() {
+           var element = document.getElementById("list-menu");
+            element.classList.toggle("expand-menu");
+        }
+        </script>
 </body>
 </html>
