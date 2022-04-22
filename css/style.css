@@ -183,7 +183,7 @@ footer img{
     text-decoration: none; 
 }
 
-button:focus ~ ul {    
+button:focus-within ~ ul {    
     height: 250px;
 }
 
